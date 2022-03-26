@@ -1,0 +1,126 @@
+* {
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.block {
+    display: grid;
+    grid: 40rem / 20% 30% 30% 20%;
+}
+
+.left_block {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    color: rgb(58, 57, 57);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.left_block>div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.head_span {
+    font-size: 2.5rem;
+}
+
+.right_block {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(58, 57, 57);
+}
+
+.header_right {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.main_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.form {
+    width: 35rem;
+}
+
+.main_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 2rem;
+    border: 1px rgb(58, 57, 57);
+}
+
+.image {
+    width: 100px;
+}
+
+.price_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.first_line {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 2rem;
+    border: 1px rgb(58, 57, 57) solid;
+    color: rgb(58, 57, 57);
+}
+
+.first_line>div>input {
+    background: none;
+    border: none;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgb(58, 57, 57);
+    border-bottom: 1px solid rgb(58, 57, 57);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgb(58, 57, 57);
+    font-size: 1.25rem;
+}
+
+.count_sell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+}

